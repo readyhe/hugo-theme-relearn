@@ -1,8 +1,8 @@
 .DS_Store
-public/
-exampleSite/public
-exampleSite/hugo*.exe
+./public/
+./exampleSite/public
+./exampleSite/hugo*.exe
 .hugo_build.lock
 readyBlogContent/public
-readyBlogContent/
+readyBlogContent/content
 
