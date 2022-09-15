@@ -12,6 +12,7 @@
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     {{- end }}
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    <!--  如果有作者就加上author meta -->
     {{- with .Site.Params.author }}
     <meta name="author" content="{{ . }}">
     {{- end }}

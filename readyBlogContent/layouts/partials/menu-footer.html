@@ -14,8 +14,11 @@
               margin: 0;
             }
           </style>
-          <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/archive/main.zip" data-icon="octicon-cloud-download" aria-label="Download McShelby/hugo-theme-relearn on GitHub">Download</a>
-          <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star McShelby/hugo-theme-relearn on GitHub">Star</a>
-          <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork McShelby/hugo-theme-relearn on GitHub">Fork</a>
-          <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          {{/*  下面是标记git URL的 */}}
+          {{- with .Site.Params.themeGitURL }}
+          <a class="github-button" href="{{ .}}/archive/main.zip" data-icon="octicon-cloud-download" aria-label="Download hugo-theme-relearn on GitHub">Download</a>
+          <a class="github-button" href="{{ .}}" data-icon="octicon-star" data-show-count="true" aria-label="Star hugo-theme-relearn on GitHub">Star</a>
+          <a class="github-button" href="{{ .}}/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork hugo-theme-relearn on GitHub">Fork</a>
+          <p>Built with <a href="{{ .}}"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          {{- end }}
           <script async src="{{"js/buttons.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>

@@ -1,6 +1,6 @@
 # this is a required setting for this theme to appear on https://themes.gohugo.io/
 # change this to a value appropriate for you
-# baseURL = "https://example.com"
+baseURL = "https://example.com"
 # as the official Hugo documentation recommends, we turn this off for this
 # showcase; this allows the published site to be served by both http and https
 canonifyURLs = false
@@ -25,7 +25,7 @@ title = "readyBlog"
 # 设置特定于这个主题的功能
 [params]
   # editURL = "https://github.com/readyhe/hugo-theme-relearn/edit/main/exampleSite/content/"
-  # description = "Documentation for Hugo Relearn Theme"
+  description = "readyhe的blog"
   author = "readyhe"
   showVisitedLinks = true
   collapsibleMenu = true
@@ -33,13 +33,14 @@ title = "readyBlog"
   disableNextPrev = false
   disableLandingPageButton = true
   titleSeparator = "🐶"
-  themeVariant = [ "relearn-light", "relearn-dark", "learn", "neon", "blue", "green", "red" ]
+  themeVariant = ["neon", "relearn-light", "relearn-dark", "learn", "blue", "green", "red" ]
   disableSeoHiddenPages = true
   # this is for the stylesheet generator to allow for interactivity in mermaid
   # graphs; you usually will not need it and you should remove this for
   # security reasons
   mermaidInitialize = "{ \"securityLevel\": \"loose\" }"
   additionalContentLanguage = [ "zh" ]
+  themeGitURL = "https://github.com/readyhe/hugo-theme-relearn"
 
 [outputs]
   # add JSON to the home to support lunr search; This is a mandatory setting
