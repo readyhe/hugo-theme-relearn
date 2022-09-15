@@ -1,4 +1,4 @@
-cd ./readyBlogContent/public/
+cd ./public/
 git init
 git add .
 git commit -m "release commit"
